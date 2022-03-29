@@ -23,11 +23,20 @@ namespace FibonacciSpecs {
 
             Assert.AreEqual(expected, number);
         }
+
+        [Test]
+        public void calculate_third_element() {
+            var expected = 1;
+
+            var number = Fibonacci.Run(2);
+
+            Assert.AreEqual(expected, number);
+        }
     }
 
     public class Fibonacci {
         public static int Run(int position) {
-            if (position == 1) return 1;
+            if (position > 0 ) return 1;
             return 0;
         }
     }
