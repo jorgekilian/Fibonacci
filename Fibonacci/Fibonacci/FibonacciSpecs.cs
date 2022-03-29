@@ -17,7 +17,7 @@ namespace FibonacciSpecs {
     }
 
     public class Fibonacci {
-        public static int Run(int i) {
+        public static int Run(int position) {
             return 0;
         }
     }
