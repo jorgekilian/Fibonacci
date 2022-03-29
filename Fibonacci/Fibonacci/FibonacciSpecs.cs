@@ -12,7 +12,7 @@ namespace FibonacciSpecs {
 
             var number = Fibonacci.Run(0);
 
-            Assert.AreEqual(expected,number);
+            Assert.AreEqual(expected, number);
         }
 
         [Test]
@@ -47,6 +47,18 @@ namespace FibonacciSpecs {
             var expected = 3;
 
             var number = Fibonacci.Run(4);
+
+            Assert.AreEqual(expected, number);
+        }
+
+        [TestCase(5, 5)]
+        [TestCase(6, 8)]
+        [TestCase(7, 13)]
+        [TestCase(8, 21)]
+        [TestCase(9, 34)]
+        public void calculate_fifth_element(int pos, int expected) {
+
+            var number = Fibonacci.Run(pos);
 
             Assert.AreEqual(expected, number);
         }
