@@ -7,8 +7,18 @@ namespace FibonacciSpecs {
         }
 
         [Test]
-        public void Test1() {
-            Assert.Pass();
+        public void calculate_first_element() {
+            var expected = 0;
+
+            var number = Fibonacci.Run(0);
+
+            Assert.AreEqual(expected,number);
+        }
+    }
+
+    public class Fibonacci {
+        public static int Run(int i) {
+            return 0;
         }
     }
 }
